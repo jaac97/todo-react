@@ -1,7 +1,7 @@
 const TodoList = ({children}) => {
     return ( <>
         <section>
-            <ul>
+            <ul className="flex flex-col gap-4 justify-center items-center">
                 {children}
             </ul>
         </section>

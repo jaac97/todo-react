@@ -11,7 +11,7 @@ const todos = [
   {id: 1, text: 'Cortar cebolla', completed: false},
   {id: 2, text: 'Tomar curso', completed: false},
   {id: 3, text: 'Llorar con la llorona', completed: false},
-  {id: 4, text: 'Coger bien rico con jarline', completed: true},
+  {id: 4, text: 'Algo', completed: true},
 
 
 ];

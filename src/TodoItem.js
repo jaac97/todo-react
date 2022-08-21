@@ -1,4 +1,4 @@
-import { MdSearch, MdCheck } from "react-icons/md";
+import { MdCheck } from "react-icons/md";
 
 const TodoItem = ({text, completed}) => {
     return ( 
@@ -8,9 +8,9 @@ const TodoItem = ({text, completed}) => {
                 {completed  === false ?
                 <span className="block rounded-full h-5 w-5 bg-white mx-auto"> </span> :
                 <span className="h-5 w-5 bg-green-300 rounded-full mx-auto flex justify-center items-center">{<MdCheck />}</span> } 
-               
             </button>
-            <p className="ml-4 ">{text}</p>
+              
+                <p  className={`ml-4 ${completed && "line-through text-neutral-700"}`}>{text}</p>
         
         </li>
     </> );

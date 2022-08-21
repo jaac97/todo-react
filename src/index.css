@@ -11,12 +11,14 @@
 .todo__searchContainer{
     position: relative;
 }
-.todo__searchContainer::after{
+
+.todo__searchInput:focus + .todo__search{
+     color: rgb(71 85 105);
+}
+.todo__search{
+    color: rgb(99 102 241 / 0.4);
     content: '';
     display: block;
-    background-image: url('./search.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
     height: 1.4rem;
     width: 1.5rem;
     position: absolute;

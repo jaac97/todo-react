@@ -3,8 +3,10 @@ import { IconContext } from "react-icons";
 
 const TodoSearch = ({searchValue, setSearchValue}) => {
     const onSearchValueChange = (value) => {
-        console.log(value)
         setSearchValue(value)
+  /*   
+        setTodos(todos.filter(todo => todo.text.includes(value) ? todo : ''))
+       */
     }
     return ( 
     <IconContext.Provider value={{ size: "2rem", className:"todo__search" }}>

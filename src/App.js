@@ -11,6 +11,8 @@ const todos = [
   {id: 1, text: 'Cortar cebolla', completed: false},
   {id: 2, text: 'Tomar curso', completed: false},
   {id: 3, text: 'Llorar con la llorona', completed: false},
+  {id: 4, text: 'Coger bien rico con jarline', completed: true},
+
 
 ];
 function App(props) {
@@ -25,7 +27,7 @@ function App(props) {
             <TodoCounter />      
             <TodoSearch />
             <TodoList >
-                {todos.map(todo =>( <TodoItem key={todo.id} text={todo.text}/>))} 
+                {todos.map(todo =>( <TodoItem key={todo.id} text={todo.text} completed={todo.completed}/>))} 
             </TodoList> 
             <CreateTodoButton />
           </div> 
